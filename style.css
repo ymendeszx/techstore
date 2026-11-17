@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f2f5;
+  color: #222;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 24px 16px;
+}
+
+.container {
+  background-color: #fff;
+  width: 100%;
+  max-width: 420px;
+  height: fit-content;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+}
+
+h1 {
+  color: #1a56db;
+  font-size: 1.6rem;
+}
+
+.subtitulo {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 14px;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid #1a56db;
+}
+
+button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #1a56db;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1342a8;
+}
+
+#resultado {
+  margin-top: 24px;
+  padding: 16px;
+  background-color: #eef4ff;
+  border-left: 4px solid #1a56db;
+  border-radius: 6px;
+}
+
+#resultado h2 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+#resultado p {
+  margin-bottom: 6px;
+}
+
+.total {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+/* Classe que esconde o painel de resultado */
+.hidden {
+  display: none;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora TechStore</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Calculadora TechStore</h1>
+    <p class="subtitulo">Simule o valor final da sua compra</p>
+
+    <form id="form-orcamento">
+      <label for="valor">Valor do produto (R$)</label>
+      <input type="number" id="valor" min="0" step="0.01" placeholder="Ex.: 100.00" required>
+
+      <label for="pagamento">Forma de pagamento</label>
+      <select id="pagamento" required>
+        <option value="">Selecione...</option>
+        <option value="pix">PIX (15% de desconto)</option>
+        <option value="boleto">Boleto (10% de desconto)</option>
+        <option value="cartao-vista">Cartão à Vista (5% de desconto)</option>
+        <option value="cartao-parcelado">Cartão Parcelado (sem desconto)</option>
+      </select>
+
+      <label for="entrega">Modalidade de entrega</label>
+      <select id="entrega" required>
+        <option value="">Selecione...</option>
+        <option value="retirada">Retirada (R$ 0,00)</option>
+        <option value="padrao">Entrega Padrão (R$ 12,00)</option>
+        <option value="expressa">Expressa (R$ 25,00)</option>
+        <option value="super-expressa">Super Expressa (R$ 45,00)</option>
+      </select>
+
+      <button type="submit">Calcular</button>
+    </form>
+
+    <section id="resultado" class="hidden">
+      <h2>Resumo do orçamento</h2>
+      <p>Valor do produto: <strong id="res-valor"></strong></p>
+      <p>Desconto: <strong id="res-desconto"></strong></p>
+      <p>Frete: <strong id="res-frete"></strong></p>
+      <p class="total">Total final: <strong id="res-total"></strong></p>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
